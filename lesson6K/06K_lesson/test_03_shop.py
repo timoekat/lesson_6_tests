@@ -1,4 +1,3 @@
-from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -26,5 +25,4 @@ text = text.replace("Total: $", "")
 total = float(text)
 assert total == 58.29
 
-sleep(3)
 driver.quit()
